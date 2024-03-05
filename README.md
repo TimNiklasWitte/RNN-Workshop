@@ -4,7 +4,7 @@
 
 ### Predict total sum odd or even?
 
-<img src="./EvenOddTotalSeq/Plots/AccuracyLoss.png" width="500" height="250">
+<img src="./EvenOddTotalSum/Plots/AccuracyLoss.png" width="500" height="250">
 
 ### Predict total sum
 
@@ -18,5 +18,5 @@
 
 ### Predict current sum odd or even?
 
-<img src="./EvenOddCurrent/Plots/AccuracyLoss.png" width="500" height="250">
+<img src="./EvenOddCurrentSum/Plots/AccuracyLoss.png" width="500" height="250">
 
