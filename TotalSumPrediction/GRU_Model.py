@@ -12,7 +12,7 @@ class GRU_Model(tf.keras.Model):
         self.gru_cell = GRU_Cell(units=20)
    
         self.layer_list = [
-            tf.keras.layers.RNN(self.gru_cell, return_sequences=True, unroll=True),
+            tf.keras.layers.RNN(self.gru_cell, return_sequences=False, unroll=True),
             tf.keras.layers.Dense(units=10, activation="tanh"),
             tf.keras.layers.Dense(units=5, activation="tanh"),
             tf.keras.layers.Dense(units=num_classes, activation="softmax")

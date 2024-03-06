@@ -21,7 +21,7 @@ def dataset_generator():
     for i in range(DATASET_SIZE):
 
         x = np.random.randint(MAX_NUMBER, size=(SEQ_LEN, 1))
-        target = np.cumsum(x)
+        target = np.sum(x)
         target = np.expand_dims(target, axis=-1)
         yield x, target
 
@@ -35,7 +35,7 @@ def main():
                 dataset_generator,
                 output_signature=(
                         tf.TensorSpec(shape=(SEQ_LEN, 1), dtype=tf.uint8),
-                        tf.TensorSpec(shape=(SEQ_LEN, 1), dtype=tf.uint8)
+                        tf.TensorSpec(shape=(1,), dtype=tf.uint8)
                     )
                 )
     

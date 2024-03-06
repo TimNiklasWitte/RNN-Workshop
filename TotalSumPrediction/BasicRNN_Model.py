@@ -13,7 +13,7 @@ class BasicRNN_Model(tf.keras.Model):
         self.basic_rnn_cell = BasicRNN_Cell(units=20)
 
         self.layer_list = [
-            tf.keras.layers.RNN(self.basic_rnn_cell, return_sequences=True, unroll=True),
+            tf.keras.layers.RNN(self.basic_rnn_cell, return_sequences=False, unroll=True),
             tf.keras.layers.Dense(units=10, activation="tanh"),
             tf.keras.layers.Dense(units=5, activation="tanh"),
             tf.keras.layers.Dense(units=num_classes, activation="softmax")
