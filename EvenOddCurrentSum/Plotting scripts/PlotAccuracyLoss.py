@@ -41,7 +41,7 @@ def main():
         ax.grid()
 
     plt.tight_layout()
-    plt.savefig("./Plots/AccuracyLoss.png", bbox_inches='tight')
+    plt.savefig("../Plots/AccuracyLoss.png", bbox_inches='tight')
     plt.show()
 
 if __name__ == "__main__":
