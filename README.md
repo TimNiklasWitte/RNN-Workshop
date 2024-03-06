@@ -1,6 +1,6 @@
 # RNN Workshop
 
-This repository contains tasks for RNNs (listed below) which are easy to solve and fast to implement.
+This repository contains tasks for RNNs (listed below) which are easy to solve for them (fast learning) and fast to implement.
 
 
 ## Many-to-One
